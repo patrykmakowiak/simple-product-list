@@ -6,13 +6,12 @@ type InitialState = {
   counter: number;
 };
 
-const initialState = {
-  counter: 0,
-};
-
 type Action = {
   type: string;
-  payload: number;
+};
+
+const initialState = {
+  counter: 0,
 };
 
 const productsReducer = (state: InitialState = initialState, action: Action) => {

@@ -1,0 +1,44 @@
+.filter {
+  padding: 36px;
+}
+
+.filter-header {
+  font-size: 2.2rem;
+  color: #343434;
+  border-bottom: 1px solid #343434;
+  font-family: 'Lalezar';
+  margin-bottom: 36px;
+}
+
+.filter-label {
+  font-family: 'Lalezar';
+  font-size: 1.8rem;
+}
+
+.filter-list {
+  padding: 0;
+  list-style: none;
+}
+
+.filter-list-item {
+  padding: 4px 0;
+}
+
+.filter-list-item label {
+  display: flex;
+  align-items: center;
+}
+
+.filter-list-item input {
+  margin-right: 10px;
+}
+
+.filter-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.filter-icon.blue {
+  background-color: #32add6;
+}

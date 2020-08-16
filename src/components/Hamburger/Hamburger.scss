@@ -1,0 +1,44 @@
+.hamburger {
+  margin: 0 8px;
+  @media (min-width: 768px) {
+    margin: 0 34px;
+  }
+}
+
+.hamburger-box {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform;
+  border-radius: 4px;
+  background-color: #000;
+}
+
+.hamburger-inner:before, .hamburger-inner:after {
+  display: block;
+  content: "";
+}
+
+.hamburger-inner:before {
+  top: 10px;
+}
+
+.hamburger-inner:after {
+  top: 20px;
+  bottom: -10px;
+}
+
+.hamburger--spin.is-active .hamburger-inner {
+  transition-delay: .12s;
+  transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  transform: rotate(225deg);
+}

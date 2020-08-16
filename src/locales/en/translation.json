@@ -1,3 +1,13 @@
 {
-  "Banner": "Panda Collection"
+  "Banner": "Panda Collection",
+  "Logo": {
+    "alt": "Panda Group"
+  },
+  "Filter": {
+    "Name": "Filter by",
+    "Color": "Color"
+  },
+  "Product": {
+    "AddToCart": "Add to Cart"
+  }
 }
