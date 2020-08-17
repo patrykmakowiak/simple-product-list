@@ -1,0 +1,16 @@
+.banner {
+  padding: 26px 0;
+  background: #343434;
+  color: #fff;
+}
+
+.banner h1 {
+  text-align: center;
+  font-size: 3.6rem;
+  margin: 0;
+  font-family: 'Lalezar', cursive;
+  line-height: 0.9;
+  @media (min-width: 768px) {
+    font-size: 4.8rem;
+  }
+}

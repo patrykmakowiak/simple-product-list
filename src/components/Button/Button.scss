@@ -1,0 +1,18 @@
+@import '../../constants/variables.scss';
+
+.button {
+  border: 1px solid $color_darker_blue;
+  background-color: $color_darker_blue;
+  color: #ffffff;
+  width: 100%;
+  margin: 3px 0;
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: 'Lalezar', cursive;
+  transition: all .2s linear;
+  cursor: pointer;
+  &:hover {
+    color: $color_darker_blue;
+    background-color: $color_white;
+  }
+}

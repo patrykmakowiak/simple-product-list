@@ -1,3 +1,18 @@
 {
-  "Hello": "Hello World"
+  "Banner": "Panda Collection",
+  "Logo": {
+    "alt": "Panda Group"
+  },
+  "Filter": {
+    "Name": "Filter by",
+    "Show": "Show",
+    "Hide": "Hide",
+    "Color": "Color"
+  },
+  "Product": {
+    "AddToCart": "Add to Cart"
+  },
+  "Nav": {
+    "Show": "Show navigation"
+  }
 }

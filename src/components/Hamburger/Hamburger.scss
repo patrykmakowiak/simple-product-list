@@ -1,0 +1,64 @@
+@import '../../constants/variables.scss';
+
+.hamburger {
+  margin: 0 8px;
+  cursor: pointer;
+  @media (min-width: 768px) {
+    margin: 0 34px;
+  }
+}
+
+.hamburger__box {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.hamburger__inner, .hamburger__inner:after, .hamburger__inner:before {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform;
+  border-radius: 4px;
+}
+
+.hamburger__inner--black,
+.hamburger__inner--black:after,
+.hamburger__inner--black:before {
+  background-color: $color_black;
+}
+
+.hamburger__inner--white,
+.hamburger__inner--white:after,
+.hamburger__inner--white:before {
+  background-color: $color_white;
+}
+
+.hamburger__inner:before, .hamburger__inner:after {
+  display: block;
+  content: "";
+}
+
+.hamburger__inner:before {
+  top: 10px;
+}
+
+.hamburger__inner:after {
+  top: 20px;
+  bottom: -10px;
+}
+
+.hamburger--close .hamburger__inner:after {
+  transform: translate3d(0,-20px,0) rotate(-90deg);
+}
+.hamburger--close .hamburger__inner:before {
+  transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
+  opacity: 0;
+}
+
+.hamburger--close .hamburger__inner {
+  transform: translate3d(0,10px,0) rotate(45deg);
+}

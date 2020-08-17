@@ -1,0 +1,12 @@
+@import '../../constants/variables.scss';
+
+.nav-item__link {
+  color: $color_white;
+  font-size: 3.2rem;
+  padding: 28px;
+  font-family: 'Lalezar', cursive;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
