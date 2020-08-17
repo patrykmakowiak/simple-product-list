@@ -8,8 +8,8 @@ type Props = {
 }
 
 const NavItem = ({ href, name }: Props) => (
-  <li>
-    <a className="link" href={href}>{name}</a>
+  <li className="nav-item">
+    <a className="nav-item__link" href={href}>{name}</a>
   </li>
 );
 

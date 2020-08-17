@@ -25,30 +25,30 @@ const Product = ({
   return (
     <div className="product">
       <img
-        className="img"
+        className="product__img"
         src={`${process.env.REACT_APP_API_URL}${images.thumbnail}`}
         alt={title}
       />
-      <div className="product-button-wrapper">
+      <div className="product__button-wrapper">
         <Button handleOnClick={handleOnClick}>
           {t('Product.AddToCart')}
         </Button>
         {prices.after_discount && (
         <img
-          className="product-sale-icon"
+          className="product__sale-icon"
           src={sale}
           alt="Sale"
         />
         )}
       </div>
-      <div className="produduct-title">{title}</div>
-      <div className="product-price-wrapper">
-        <div className={`${prices.after_discount ? 'product-after-discount' : 'product-price'}`}>
+      <div className="product__title">{title}</div>
+      <div className="product__price-wrapper">
+        <div className={`${prices.after_discount ? 'product__after-discount' : 'product__price'}`}>
           {currency}
           {prices.base}
         </div>
         {prices.after_discount && (
-        <div className="product-price">
+        <div className="product__price">
           {currency}
           {prices.after_discount}
         </div>

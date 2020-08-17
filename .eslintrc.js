@@ -11,6 +11,13 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  settings: {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -23,11 +30,6 @@ module.exports = {
     'react',
     '@typescript-eslint',
   ],
-  settings: {
-    "import/resolver": {
-      typescript: {}
-    },
-  },
   rules: {
     'react/jsx-filename-extension': [
       2,

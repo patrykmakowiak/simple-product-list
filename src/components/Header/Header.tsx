@@ -7,7 +7,7 @@ import './Header.scss';
 
 const Header = () => (
   <div className="header">
-    <Hamburger />
+    <Hamburger color="black" />
     <Logo />
     <ShoppingCart />
   </div>

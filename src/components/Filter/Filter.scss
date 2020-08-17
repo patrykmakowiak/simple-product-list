@@ -1,44 +1,70 @@
 .filter {
-  padding: 36px;
+  padding: 8px;
+  @media (min-width: 768px) {
+    padding: 36px;
+  }
 }
 
-.filter-header {
+.filter__header {
   font-size: 2.2rem;
   color: #343434;
   border-bottom: 1px solid #343434;
   font-family: 'Lalezar';
-  margin-bottom: 36px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: 768px) {
+    margin-bottom: 36px;
+  }
 }
 
-.filter-label {
+.filter__label {
   font-family: 'Lalezar';
   font-size: 1.8rem;
 }
 
-.filter-list {
+.filter__list {
   padding: 0;
   list-style: none;
 }
 
-.filter-list-item {
+.filter__list-item {
   padding: 4px 0;
 }
 
-.filter-list-item label {
+.filter__list-item label {
   display: flex;
   align-items: center;
 }
 
-.filter-list-item input {
+.filter__list-item input {
   margin-right: 10px;
 }
 
-.filter-icon {
+.filter__color {
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
 
-.filter-icon.blue {
-  background-color: #32add6;
+.filter__icon {
+  border: 0;
+  display:inline-block;
+  width:50px;
+  height:50px;
+  background:
+  linear-gradient(#000,#000),
+  linear-gradient(#000,#000);
+  background-position:center;
+  background-size: 50% 2px,2px 50%;
+  background-repeat:no-repeat;
+  transition: 0.2s;
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
+
+.filter__icon--hide {
+  transform: rotate(45deg);
+} 

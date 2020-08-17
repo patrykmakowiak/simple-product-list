@@ -15,13 +15,12 @@ import Nav from './components/Nav/Nav';
 
 const store = createStore(allReducers, composeWithDevTools(
   applyMiddleware(thunk),
-  // other store enhancers if any
 ));
 
 function App() {
   return (
     <Provider store={store}>
-      {/* <Nav /> */}
+      <Nav />
       <Header />
       <Banner />
       <main>

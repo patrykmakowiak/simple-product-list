@@ -5,9 +5,14 @@
   },
   "Filter": {
     "Name": "Filter by",
+    "Show": "Show",
+    "Hide": "Hide",
     "Color": "Color"
   },
   "Product": {
     "AddToCart": "Add to Cart"
+  },
+  "Nav": {
+    "Show": "Show navigation"
   }
 }

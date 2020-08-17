@@ -5,7 +5,7 @@ import './Logo.scss';
 
 const Logo = () => (
   <div className="logo">
-    <img src={logo} alt="Panda Group" />
+    <img className="logo__img" src={logo} alt="Panda Group" />
   </div>
 );
 

@@ -10,8 +10,8 @@ const ShoppingCart = () => {
 
   return (
     <div className="shopping-cart">
-      {!!counter && (<div className="shopping-cart-value">{counter}</div>)}
-      <img src={shoppingCart} alt="Shopping Cart" />
+      {!!counter && (<div className="shopping-cart__value">{counter}</div>)}
+      <img className="shopping-cart__img" src={shoppingCart} alt="Shopping Cart" />
     </div>
   );
 };
